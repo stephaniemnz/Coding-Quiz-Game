@@ -86,7 +86,6 @@ function quizStart() {
 	); 
 	questionsEl.removeAttribute( 
 		"class",
-    "hide"
 	); 
 	getQuestion(); 
 } 
@@ -158,23 +157,21 @@ function quizEnd() {
 	let endScreenEl = 
 		document.getElementById( 
 			"quiz-end"
-		); 
-		endScreenEl.setAttribute( 
-		  "class", 
-		  "hide"
-		); 
+	); 
+		
 	endScreenEl.removeAttribute( 
 		"class"
 	); 
+	questionsEl.setAttribute( 
+		"class", 
+		"hide"
+		);
 	let finalScoreEl = 
 		document.getElementById( 
 			"score-final"
 		); 
+
 	finalScoreEl.textContent = time; 
-	questionsEl.setAttribute( 
-		"class", 
-		"hide"
-	); 
   } 
 
   // End quiz if timer reaches 0 

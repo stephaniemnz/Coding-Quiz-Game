@@ -43,3 +43,24 @@ let questions = [
 		answer: "console.log", 
 	}, 
 ]; 
+
+let questionsEl = 
+	document.querySelector("#questions"); 
+
+let timerEl = 
+	document.querySelector("#timer"); 
+
+let choicesEl = 
+	document.querySelector("#options"); 
+
+let submitBtn = 
+document.querySelector("#submit-score"); 
+
+let startBtn = 
+document.querySelector("#start"); 
+
+let initialsEl = 
+	document.querySelector("#initials"); 
+
+let reStartBtn = 
+	document.querySelector("#restart"); 

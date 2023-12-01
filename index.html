@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="./assets/style.css">
+</head>
+<header class="felx-column flex center"> 
+    <div> 
+        <a href="./highscore.html"> 
+            <button class="btn" id="view-high-scores"> 
+                View High Scores 
+            </button> 
+        </a> 
+    </div> 
+    <div class="timer"> 
+            Time: 
+            <span id="timer"> 
+                0 
+            </span> 
+    </div> 
+</header>
+<body>
+   <main class="container felx-column flex center">
+    
+    <div id="quiz-start"> 
+        <div id="start-screen"> 
+            <h1>Coding Quiz Challenge</h1> 
+            <p class ="hide" > 
+                Answer the following questions before time runs out. 
+                If you answer incorrectly, ten seconds will be subtracted from your time. 
+                If you answer all questions correctly, you will receive a bonus of five seconds per question.
+            </p>
+            <button class="btn-start" id="start">Start Quiz</button>
+        </div>
+    </div>
+
+    <div class ="hide" id="questions">
+        <h2 id="question-appears"></h2> 
+        <div class="options" id="options"> 
+    </div> 
+    
+    <div class="hide" id="quiz-end"> 
+        <h2>All Done!</h2> 
+        <p>Your final score is: 
+            <span id="score-final"> </span> 
+        </p> 
+        <p> 
+            Please enter your initials: 
+            <input type="text" id="initials" max="3" /> 
+            <div>
+            <button class="btn" id="submit-score"> 
+                Submit 
+            </button> 
+            <a href="index.html"> 
+                <button class="btn"> 
+                   Start Over 
+                </button> 
+            </a> 
+            </div>
+        </p> 
+    </div> 
+</main>
+<script src="./assets/script.js"></script>
+</body>
+</html>

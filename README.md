@@ -11,7 +11,7 @@
 - Click submit to collect the scores in the High Score Page.
 - To start over, click "Start Over".
 
-![Alt text](image.png)
+![Alt text](assets/image.png)
 
 ## Link:
 https://stephaniemnz.github.io/Coding-Quiz-Game/

@@ -1,0 +1,177 @@
+:root {
+    background-color: black;
+    font-family: monospace; 
+}
+p {
+    color: rgb(255, 255, 255);
+    font-size: 20px;
+    margin-bottom:  5rem;
+    text-align: center;
+}
+h1 {
+    color: rgb(174, 204, 6);
+    font-size: 75px;
+    margin-bottom:  5rem;
+    text-align: center;
+
+}
+
+h2 {
+    color: rgb(255, 255, 255);
+    font-size: 50px;
+    margin-bottom:  5rem;
+}
+h3 {
+    color: rgb(255, 255, 255);
+    font-size: 20px;
+    margin-right: 2rem;
+    text-align: center;
+}
+.timer {
+    color: rgb(255, 255, 255);
+    font-size: 20px;
+    margin-right: 5rem;
+    text-align: right
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    width: 100vw;
+    max-width: 80rem;
+    margin: 0 auto;
+    padding: 0 2rem;
+}
+.scores { 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: rgb(255, 255, 255);
+    font-size: 20px;
+    margin: 50px auto 0 auto; 
+
+}
+.flex-column {
+    display: flex;
+    flex-direction: column;
+}
+.flex-center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.btn {
+    position: relative; 
+    background-color: rgb(255, 255, 255);
+    border:rgb(255, 255, 255);
+    border-radius: 5px;
+    color: black;
+    font-size: 20px;
+    text-align: center;
+    width: 18rem;
+    padding: 1rem 2rem;
+    margin: 1rem;
+    margin-left: 2rem;
+    margin-top: 3rem;
+}
+.btn-start {
+    position: center; 
+    background-color: rgb(255, 255, 255);
+    border:rgb(255, 255, 255);
+    border-radius: 5px;
+    color: black;
+    font-size: 20px;
+    text-align: center;
+    width: 18rem;
+    padding: 1rem 2rem;
+    margin: 1rem;
+    margin-left: 25rem;
+}
+.btn:hover {
+    background-color: rgb(174, 204, 6);
+    color: black;
+    cursor: pointer;
+}
+.btn-start:hover {
+    background-color: rgb(174, 204, 6);
+    color: black;
+    cursor: pointer;
+}
+.btn-options {
+    position: left; 
+    background-color: rgb(255, 255, 255);
+    border:rgb(255, 255, 255);
+    border-radius: 5px;
+    color: black;
+    font-size: 20px;
+    text-align: center;
+    width: 18rem;
+    padding: 1rem 2rem;
+    margin: 1rem;
+}
+.btn-options:hover {
+    background-color: rgb(174, 204, 6);
+    color: black;
+    cursor: pointer;
+}
+
+#options {
+    display: flex;
+    flex-direction: column;
+    align-items: right;
+    justify-content: right;
+    position: relative;
+    font-size: 40px;
+    text-align: right;
+    width: 15rem;
+    padding: 1rem 1rem;
+    margin: 2rem;
+    margin-left: 1rem
+}
+
+#questions {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: right;
+    position: relative;
+    font-size: 30px;
+    text-align: center;
+    width: auto;
+    padding: 1rem 1rem;
+}
+
+.hide {
+    display: none;
+}
+@media screen and (max-width: 768px) {
+    h1 {
+        font-size: 50px;
+    }
+    h2 {
+        font-size: 30px;
+    }
+    h3 {
+        font-size: 15px;
+    }
+    p {
+        font-size: 15px;
+    }
+    .btn {
+        font-size: 15px;
+        width: 20rem;
+    }
+    .btn-hs {
+        font-size: 15px;
+        width: 20rem;
+    }
+    #options {
+        font-size: 10px;
+        width: 20rem;
+    }
+}

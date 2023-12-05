@@ -41,11 +41,11 @@ h3 {
     justify-content: center;
     border: 2px solid rgb(174, 204, 6);
     border-radius: 5px;
-    height: 75vh;
+    height: 50vh;
     width: 100vw;
     max-width: 80rem;
-    margin: 0 auto;
-    padding: 0 2rem;
+    margin: 2rem auto;
+    padding: 8rem 2rem;
 }
 .scores { 
     display: flex;

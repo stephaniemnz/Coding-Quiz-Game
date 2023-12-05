@@ -63,7 +63,10 @@ let initialsEl =
 	document.querySelector("#initials"); 
 
 let reStartBtn = 
-	document.querySelector("#restart"); 
+	document.querySelector("#restart");
+
+let endScreenEl = 
+	document.querySelector("#quiz-end");
 
 let currentQuestionIndex = 0; 
 let time = questions.length * 15; 
@@ -86,6 +89,7 @@ function quizStart() {
 	); 
 	questionsEl.removeAttribute( 
 		"class",
+		"hide"
 	); 
 	getQuestion(); 
 } 
@@ -158,21 +162,17 @@ function quizEnd() {
 		document.getElementById( 
 			"quiz-end"
 	); 
-		
 	endScreenEl.removeAttribute( 
 		"class",
 	); 
-
 	let finalScoreEl = 
 		document.getElementById( 
 			"score-final"
 		); 
-
 	finalScoreEl.textContent = time; 
-	questionsEl.setAttribute( 
-        "class", 
-        "hide"
-	);
+	document.getElementById("question-appears").style.display = "none";
+	document.getElementById("options").style.display = "none";
+
   } 
 
   // End quiz if timer reaches 0 
@@ -212,5 +212,3 @@ function saveHighscore() {
 //save score after clicking submit button and restart quiz
 submitBtn.onclick = saveHighscore; 
 startBtn.onclick = quizStart;
-
-
